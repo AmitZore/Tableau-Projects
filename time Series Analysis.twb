@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='GOOG' inline='true' name='federated.1ky2n8t04au2gg13n0c3718rxurp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GOOG' name='textscan.0g3j7lz01x8avk1g2w5y10odjhu7'>
+            <connection class='textscan' directory='D:/Analysis/Data' filename='GOOG.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0g3j7lz01x8avk1g2w5y10odjhu7' name='GOOG.csv' table='[GOOG#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Open' ordinal='1' />
+            <column datatype='real' name='High' ordinal='2' />
+            <column datatype='real' name='Low' ordinal='3' />
+            <column datatype='real' name='Close' ordinal='4' />
+            <column datatype='real' name='Adj Close' ordinal='5' />
+            <column datatype='integer' name='Volume' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0g3j7lz01x8avk1g2w5y10odjhu7' name='GOOG.csv' table='[GOOG#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Open' ordinal='1' />
+            <column datatype='real' name='High' ordinal='2' />
+            <column datatype='real' name='Low' ordinal='3' />
+            <column datatype='real' name='Close' ordinal='4' />
+            <column datatype='real' name='Adj Close' ordinal='5' />
+            <column datatype='integer' name='Volume' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adj Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adj Close]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>Adj Close</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[GOOG.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='GOOG.csv' datatype='table' name='[__tableau_internal_object_id__].[GOOG.csv_3F13B698099F4BCCB0296D96C3718003]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='GOOG.csv' id='GOOG.csv_3F13B698099F4BCCB0296D96C3718003'>
+            <properties context=''>
+              <relation connection='textscan.0g3j7lz01x8avk1g2w5y10odjhu7' name='GOOG.csv' table='[GOOG#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='Open' ordinal='1' />
+                  <column datatype='real' name='High' ordinal='2' />
+                  <column datatype='real' name='Low' ordinal='3' />
+                  <column datatype='real' name='Close' ordinal='4' />
+                  <column datatype='real' name='Adj Close' ordinal='5' />
+                  <column datatype='integer' name='Volume' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GOOG' name='federated.1ky2n8t04au2gg13n0c3718rxurp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ky2n8t04au2gg13n0c3718rxurp'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[High]' role='measure' type='quantitative' />
+            <column-instance column='[High]' derivation='Sum' name='[sum:High:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ky2n8t04au2gg13n0c3718rxurp].[sum:High:qk]</rows>
+        <cols>[federated.1ky2n8t04au2gg13n0c3718rxurp].[tyr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{27B966F2-984A-4150-9E86-313DAD9D11C9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A58AA95-680D-46FB-BC61-8F5E52CCEB75}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      F+cfSzQDK/b6AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
